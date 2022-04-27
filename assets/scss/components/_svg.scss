@@ -1,0 +1,33 @@
+aside > svg {
+    width: 525px;
+    max-width: 375px;
+}
+
+.etiqueta {
+    animation: moverTag 4s alternate linear infinite;
+}
+
+.rueda {
+    animation: girarRueda 4s linear infinite;
+    transform-origin: 75% 75%;
+}
+
+@keyframes moverEtiqueta {
+    from {
+        transform: translateX(0%)
+    }
+
+    to {
+        transform: translateX(30%)
+    }
+}
+
+@keyframes girarRueda {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(359deg)
+    }
+}

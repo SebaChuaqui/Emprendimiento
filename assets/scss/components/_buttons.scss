@@ -1,0 +1,13 @@
+button {
+    background-color: $tangerine;
+    margin: 4px auto;
+    width: fit-content;
+    padding: 4px 2px;
+    border: 1px solid $white;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: $white;
+        border: 1px solid $sable;
+    }
+}
