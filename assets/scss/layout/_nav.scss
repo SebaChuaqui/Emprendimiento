@@ -22,7 +22,7 @@ nav {
             stroke: $orange;
         }
 
-        @include respuesta($ra-lg) {
+        @include respuesta($medida2) {
             display: none;
         }
     }

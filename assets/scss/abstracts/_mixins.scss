@@ -1,5 +1,5 @@
-@mixin respuesta($ra) {
-    @media (min-width: $ra) {
+@mixin respuesta($medida) {
+    @media (min-width: $medida) {
         @content
     }
 }
@@ -12,11 +12,11 @@
     flex-direction: column;
     align-items: center;
 
-    @include respuesta($ra-md) {
+    @include respuesta($medida1) {
         margin: 0 clamp(16px, 15%, 180px) 20px;
     }
 
-    @include respuesta($ra-lg) {
+    @include respuesta($medida2) {
         margin: 0 4px 20px;
     }
 }

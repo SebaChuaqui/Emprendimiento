@@ -18,7 +18,7 @@ nav > ul {
         border-bottom: 1px solid $white;
         box-shadow: 2px 2px 20px $sable;
 
-        @include respuesta($ra-lg) {
+        @include respuesta($medida2) {
             box-shadow: none;
             border: none;
         }
@@ -32,7 +32,7 @@ nav > ul {
         height: 100%;
     }
 
-    @include respuesta($ra-lg) {
+    @include respuesta($medida1) {
         display: flex;
         position: static;
         width: 40%;

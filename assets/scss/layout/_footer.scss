@@ -10,27 +10,31 @@ footer {
     background: $sable;
     color: $white;
 
-    >p {
+    input{
+        margin-left: 20px;
+    }
+    p {
         display: flex;
         flex-direction: column;
 
         :first-child {
             margin-top: clamp(1px, 7.5px, 16px);
 
-            @include respuesta($ra-lg) {
+            @include respuesta($medida1) {
                 margin-top: 0;
             }
         }
 
         span {
             padding-top: clamp(4px, 11.25px, 16px);
+            margin-left: 20px;
 
-            @include respuesta($ra-lg) {
+            @include respuesta($medida1) {
                 padding-top: 0;
             }
         }
 
-        @include respuesta($ra-lg) {
+        @include respuesta($medida1) {
             flex-direction: row;
             align-items: center;
             width: 50%;
@@ -38,7 +42,7 @@ footer {
         }
     }
 
-    @include respuesta($ra-lg) {
+    @include respuesta($medida2) {
         flex-direction: row;
         align-items: center;
 

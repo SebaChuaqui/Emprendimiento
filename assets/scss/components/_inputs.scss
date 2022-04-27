@@ -7,7 +7,7 @@ input {
         background-color: $tangerine;
     }
 
-    @include respuesta($ra-lg) {
+    @include respuesta($medida2) {
         margin-top: 0;
     }
 }

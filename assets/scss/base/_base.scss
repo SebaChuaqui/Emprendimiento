@@ -2,7 +2,7 @@ body {
     font-family: $ubuntu;
 }
 
-@include respuesta($ra-lg) {
+@include respuesta($medida2) {
     body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

@@ -65,9 +65,10 @@ button {
   background-color: #ffaf6d;
   margin: 4px auto;
   width: fit-content;
-  padding: 4px 2px;
+  padding: 6px 2px;
   border: 1px solid #fff;
-  border-radius: 4px;
+  border-radius: 6px;
+  margin-left: 2px;
 }
 button:hover {
   background-color: #fff;
@@ -120,7 +121,7 @@ nav > ul a {
   width: 100%;
   height: 100%;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   nav > ul {
     display: flex;
     position: static;
@@ -173,28 +174,32 @@ footer {
   background: #060606;
   color: #fff;
 }
-footer > p {
+footer input {
+  margin-left: 20px;
+}
+footer p {
   display: flex;
   flex-direction: column;
 }
-footer > p :first-child {
+footer p :first-child {
   margin-top: 7.5px;
 }
-@media (min-width: 992px) {
-  footer > p :first-child {
+@media (min-width: 768px) {
+  footer p :first-child {
     margin-top: 0;
   }
 }
-footer > p span {
+footer p span {
   padding-top: 11.25px;
+  margin-left: 20px;
 }
-@media (min-width: 992px) {
-  footer > p span {
+@media (min-width: 768px) {
+  footer p span {
     padding-top: 0;
   }
 }
-@media (min-width: 992px) {
-  footer > p {
+@media (min-width: 768px) {
+  footer p {
     flex-direction: row;
     align-items: center;
     width: 50%;
@@ -346,7 +351,7 @@ aside a {
   text-decoration: none;
 }
 
-.fa-twitter {
+.fa-facebook {
   margin: 0 16px 0;
 }
 

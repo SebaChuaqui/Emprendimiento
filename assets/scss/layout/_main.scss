@@ -5,7 +5,7 @@ main {
         @include articuloBase;
     }
 
-    @include respuesta($ra-lg) {
+    @include respuesta($medida2) {
         articulo {
             flex-grow: 1;
         }

@@ -1,7 +1,7 @@
 header {
     margin-top: clamp(16px, 10vh, 80px);
 
-    @include respuesta($ra-lg) {
+    @include respuesta($medida2) {
         width: clamp(950px, 375px, 1100px);
         margin: 16px auto 0;
     }
