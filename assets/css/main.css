@@ -140,11 +140,11 @@ aside > svg {
 }
 
 .etiqueta {
-  animation: moverTag 4s alternate linear infinite;
+  animation: moverEtiqueta 1s alternate linear infinite;
 }
 
 .rueda {
-  animation: girarRueda 4s linear infinite;
+  animation: girarRueda 3s linear infinite;
   transform-origin: 75% 75%;
 }
 
@@ -153,7 +153,7 @@ aside > svg {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(30%);
+    transform: translateX(10%);
   }
 }
 @keyframes girarRueda {
