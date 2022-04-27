@@ -1,0 +1,45 @@
+aside {
+    @include blocksBase;
+
+    img {
+        width: 60%;
+        max-width: 375px;
+        border: 1px solid $black;
+        border-radius: 50%;
+        margin-bottom: 16px;
+    }
+
+    > :nth-child(3) {
+        font-size: $large;
+        margin: 16px 0;
+    }
+
+    > :nth-child(4) {
+        align-self: flex-start;
+        text-align: justify;
+        line-height: 32px;
+    }
+
+    > :nth-child(5) {
+        width: 100%;
+        margin: 12px 0;
+        text-align: center;
+        color: $white;
+        background-color: $lead;
+    }
+
+    > :nth-child(6) {
+        align-self: flex-start;
+        margin-bottom: 32px;
+        padding-left: 18px;
+        list-style: circle;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.fa-twitter {
+    margin: 0 16px 0;
+}

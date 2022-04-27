@@ -1,0 +1,47 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    padding: 32px clamp(50px, 15%, 100px) 16px;
+
+    background: $sable;
+    color: $white;
+
+    >p {
+        display: flex;
+        flex-direction: column;
+
+        :first-child {
+            margin-top: clamp(1px, 7.5px, 16px);
+
+            @include respuesta($ra-lg) {
+                margin-top: 0;
+            }
+        }
+
+        span {
+            padding-top: clamp(4px, 11.25px, 16px);
+
+            @include respuesta($ra-lg) {
+                padding-top: 0;
+            }
+        }
+
+        @include respuesta($ra-lg) {
+            flex-direction: row;
+            align-items: center;
+            width: 50%;
+            justify-content: space-between;
+        }
+    }
+
+    @include respuesta($ra-lg) {
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+}
