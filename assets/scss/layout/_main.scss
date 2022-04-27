@@ -1,0 +1,14 @@
+main {
+    @include blocksBase;
+
+    articulo {
+        @include articuloBase;
+    }
+
+    @include respuesta($ra-lg) {
+        articulo {
+            flex-grow: 1;
+        }
+    }
+}
+

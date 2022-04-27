@@ -208,6 +208,65 @@ footer > p span {
   }
 }
 
+header {
+  margin-top: clamp(16px, 10vh, 80px);
+}
+@media (min-width: 992px) {
+  header {
+    width: 950px;
+    margin: 16px auto 0;
+  }
+}
+
+main {
+  border: 1px solid #000;
+  margin: 0 4px 20px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  main {
+    margin: 0 clamp(16px, 15%, 180px) 20px;
+  }
+}
+@media (min-width: 992px) {
+  main {
+    margin: 0 4px 20px;
+  }
+}
+main articulo {
+  border: 1px dotted #555555;
+  padding: 8px 8px 16px;
+  margin-bottom: 8px;
+}
+main articulo > :nth-child(2) {
+  margin: 12px 0 16px;
+}
+main articulo > :nth-child(3) {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 28px;
+}
+main articulo .instructor {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  margin: 16px 0;
+}
+main articulo .iconos i {
+  margin-right: 2px;
+}
+main articulo .contador {
+  margin-right: 12px;
+}
+@media (min-width: 992px) {
+  main articulo {
+    flex-grow: 1;
+  }
+}
+
 aside {
   border: 1px solid #000;
   margin: 0 4px 20px;
