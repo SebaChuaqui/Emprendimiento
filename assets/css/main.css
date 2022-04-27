@@ -267,6 +267,34 @@ main articulo .contador {
   }
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  max-height: 80px;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+nav img {
+  height: 60%;
+  margin-left: 16px;
+  width: auto;
+}
+nav svg {
+  margin-right: 16px;
+}
+nav svg path:hover {
+  stroke: #ffa500;
+}
+@media (min-width: 992px) {
+  nav svg {
+    display: none;
+  }
+}
+
 aside {
   border: 1px solid #000;
   margin: 0 4px 20px;

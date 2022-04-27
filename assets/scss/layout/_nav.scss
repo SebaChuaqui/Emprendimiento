@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    max-height: 80px;
+    background-color: $black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    img {
+        height: 60%;
+        margin-left: 16px;
+        width: auto;
+    }
+
+    svg {
+        margin-right: 16px;
+
+        & path:hover {
+            stroke: $orange;
+        }
+
+        @include respuesta($ra-lg) {
+            display: none;
+        }
+    }
+
+}
