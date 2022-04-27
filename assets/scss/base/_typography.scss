@@ -1,0 +1,16 @@
+aside ul,
+footer {
+    font-family: $poppins;
+}
+
+aside {
+    > :nth-child(5) {
+        font-family: $poppins;
+        font-size: $large;
+        font-weight: $bold;
+    }
+}
+
+footer input {
+    font-size: $medium;
+}

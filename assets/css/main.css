@@ -35,5 +35,30 @@ body {
     grid-row: 4;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+aside ul,
+footer {
+  font-family: "Poppins", sans-serif;
+}
+
+aside > :nth-child(5) {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+footer input {
+  font-size: 16px;
+}
 
 /*# sourceMappingURL=main.css.map */
