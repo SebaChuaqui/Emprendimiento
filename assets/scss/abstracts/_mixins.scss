@@ -1,0 +1,53 @@
+@mixin respuesta($ra) {
+    @media (min-width: $ra) {
+        @content
+    }
+}
+
+@mixin blocksBase {
+    border: 1px solid $black;
+    margin: 0 4px 20px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respuesta($ra-md) {
+        margin: 0 clamp(16px, 15%, 180px) 20px;
+    }
+
+    @include respuesta($ra-lg) {
+        margin: 0 4px 20px;
+    }
+}
+
+@mixin articuloBase {
+    border: 1px dotted $lead-border;
+    padding: 8px 8px 16px;
+    margin-bottom: 8px;
+
+    > :nth-child(2) {
+        margin: 12px 0 16px;
+    }
+
+    > :nth-child(3) {
+        font-size: $medium;
+        text-align: justify;
+        line-height: 28px;
+    }
+
+    .instructor {
+        font-weight: $bold;
+        font-size: $large;
+        letter-spacing: -0.5px;
+        margin: 16px 0;
+    }
+
+    .iconos i {
+        margin-right: 2px;
+    }
+
+    .contador {
+        margin-right: 12px;
+    }
+}
